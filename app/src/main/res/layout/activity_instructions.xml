@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+    <RelativeLayout tools:context=".Instructions"  android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="INSTRUCTIONS" android:layout_marginTop="16dp" android:layout_centerHorizontal="true" android:layout_alignParentTop="true" android:id="@+id/textView1"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Main Menu" android:layout_marginTop="34dp" android:layout_centerHorizontal="true" android:id="@+id/button1" android:onClick="back" android:layout_below="@+id/help"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="1.All you have to do is to register with our app.\n\n 2.Whenever you are in danger.\n\n 3.Just open the app and shake your phone.\n\n 4.We will get your location and get you help as soon as possible" android:layout_marginTop="15dp" android:id="@+id/help" android:layout_below="@+id/textView1" android:layout_alignLeft="@+id/button1"/>
+
+</RelativeLayout>

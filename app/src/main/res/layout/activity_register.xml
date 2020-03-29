@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+    <RelativeLayout tools:context=".Register"   android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Name:" android:layout_marginTop="64dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:id="@+id/textView1"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Number:" android:layout_marginTop="71dp" android:id="@+id/textView2" android:layout_below="@+id/textView1" android:layout_alignLeft="@+id/textView1"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Save" android:layout_marginTop="68dp" android:id="@+id/button1" android:layout_below="@+id/textView2" android:onClick="storeInDB" android:layout_centerHorizontal="true"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/editText2" android:inputType="phone" android:hint="Mobile Number" android:ems="10" android:layout_alignRight="@+id/button1" android:layout_alignBottom="@+id/textView2" android:layout_alignBaseline="@+id/textView2"/>
+
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/editText1" android:layout_alignLeft="@+id/editText2" android:inputType="textPersonName" android:hint="Person Name" android:ems="10" android:layout_alignBottom="@+id/textView1" android:layout_alignBaseline="@+id/textView1">
+
+    <requestFocus/>
+
+</EditText>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Instructions" android:id="@+id/button2" android:layout_alignLeft="@+id/button1" android:onClick="instructions" android:layout_marginBottom="21dp" android:layout_alignParentBottom="true" style="?android:attr/buttonStyleSmall"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Press Me!" android:id="@+id/button3" android:onClick="display" android:layout_alignRight="@+id/button1" style="?android:attr/buttonStyleSmall" android:layout_alignTop="@+id/button2"/>
+
+</RelativeLayout>
